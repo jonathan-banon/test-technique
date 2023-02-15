@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo"></div>
+            <div class="nav">
+                <p class="bold">Man</p>
+                <p>Woman</p>
+                <p>Kids</p>
+                <p>Custmise</p>
+                <p>Sales</p>
+                <p>SNKRS</p>
+            </div>
+            <div class="logo-nav"></div>
+        </header>
+        <main>
+            <div class="lg-container">
+                <div class="logo-main"></div>
+                <div class="social-container">
+                    <p>TWITTER</p>
+                    <p>FACEBOOK</p>
+                    <p>INSTAGRAM</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="arrow-left"></div>
+                <div class="card">
+                    <div class="logo-card-1"></div>
+                    <div class="separator"></div>
+                    <div class="text-card">
+                        <p>NIKE AIR 031-Off Red</p>
+                        <p class="bold">$110.00</p>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="logo-card-2"></div>
+                    <div class="separator"></div>
+                    <div class="text-card">
+                        <p>NIKE AIR 031-Off Red</p>
+                        <p class="bold">$110.00</p>
+                    </div>
+                </div>
+                <div class="arrow-right"></div>
+            </div>
+        </main>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Florian Menanteau</p>
+                <p>Directeur de projet digital</p>
+                <p>05 24 99 15 00</p>
+                <a href="https://www.thekub.com/">Site internet</a>
+            </div>
+        </div>
+        <div class="modal-container">
+            <button id="myBtn">Contact</button>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        } 
+    </script>
+</body>
+</html>
